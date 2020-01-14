@@ -68,4 +68,6 @@ Commands within test cases:
 8. browser.debug();
 9. DEBUG=true npm test -- --spec=tests/webdriverUniversityTest.js
 10. .exit to leave debug mode
+11. it.only('XXXXX', function(done)
+12. it.skip('XXXXX', function(done)  
 
