@@ -70,4 +70,7 @@ Commands within test cases:
 10. .exit to leave debug mode
 11. it.only('XXXXX', function(done)
 12. it.skip('XXXXX', function(done)  
+13. browser.getCssProperty('#udemy-promo-thumbnail', 'height');
+14. before hooks: https://mochajs.org/#hooks
+15. browser.setValue("locator",'Joe');
 
