@@ -73,4 +73,7 @@ Commands within test cases:
 13. browser.getCssProperty('#udemy-promo-thumbnail', 'height');
 14. before hooks: https://mochajs.org/#hooks
 15. browser.setValue("locator",'Joe');
+16. browser.getTabIds();
+17. browser.switchTab(tabIds[1]);
+18. expect(url).to.include('TextContainedInURL', 'Text in case of mismatch');
 
