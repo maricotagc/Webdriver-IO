@@ -1,6 +1,7 @@
 # Udemy_Webdriverio
 
 NodeJs contains:
+------------------------------------
 1. npm: node pack manager which manages other packages (webdriver, mocha, chai, etc).
 2. node: executes JS files. To find out version use command: node -v
 3. selenium webdriver: package I will use (automation tool).
@@ -11,17 +12,13 @@ NodeJs contains:
 8. mocha is a package (framework) which has a standard of test cases (describe, it...)
 
 Useful commands:
-
+--------------------------------------
 "npm test" --> to execute tests
 "npm test -- --logLevel=verbose" --> to execute TC and see logs in console
 "npm test -- --spec=tests/TESTTOBEEXECUTED.js" --> to execute specific test within tests directory
 
-Useful websites:
-1. chaijs.com 
-2. nodejs.org./api/assert.html
-
 Creating new project
-
+--------------------------------------
 1. install node
 2. create project folder
 3. get into the project folder and type: npm init (it creates the package.json)
@@ -56,12 +53,18 @@ beforeSession: function (config, capabilities, specs) {
                    expect = require('chai').expect;
                    should = require('chai').should();
                },
+               
+Useful websites:
+-----------------------------------------------
+1. chaijs.com 
+2. nodejs.org./api/assert.html
 
 Commands within test cases:
-1. browser.setViewportSize
-2. browser.getTitle()
-3. expect(var).to.equal('expectedValue')
-4. browser.click(selector)
+-----------------------------------------------
+1. expect(var).to.equal('expectedValue')
+2. expect(url).to.include('TextContainedInURL', 'Text in case of mismatch');
+3. browser.setViewportSize
+4. browser.getTitle()
 5. browser.pause(miliseconds)
 6. var.should.equal('expectedValue')
 7. this.timeout(miliseconds)
@@ -75,6 +78,7 @@ Commands within test cases:
 15. browser.setValue("locator",'Joe');
 16. browser.getTabIds();
 17. browser.switchTab(tabIds[1]);
-18. expect(url).to.include('TextContainedInURL', 'Text in case of mismatch');
+18. browser.click(selector)
 19. browser.isExisting('selector);
+20. browser.isVisible('#not-displayed');
 
