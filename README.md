@@ -76,4 +76,5 @@ Commands within test cases:
 16. browser.getTabIds();
 17. browser.switchTab(tabIds[1]);
 18. expect(url).to.include('TextContainedInURL', 'Text in case of mismatch');
+19. browser.isExisting('selector);
 
