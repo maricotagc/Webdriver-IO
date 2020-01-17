@@ -82,4 +82,5 @@ Commands within test cases:
 19. browser.isExisting('selector);
 20. browser.isVisible('selector');
 21. browser.hasFocus('selector');
+22. browser.isEnabled("selector");
 
