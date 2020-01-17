@@ -80,5 +80,6 @@ Commands within test cases:
 17. browser.switchTab(tabIds[1]);
 18. browser.click(selector)
 19. browser.isExisting('selector);
-20. browser.isVisible('#not-displayed');
+20. browser.isVisible('selector');
+21. browser.hasFocus('selector');
 
