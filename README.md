@@ -71,8 +71,8 @@ Commands within test cases:
 8. browser.debug();
 9. DEBUG=true npm test -- --spec=tests/webdriverUniversityTest.js
 10. .exit to leave debug mode
-11. it.only('XXXXX', function(done)
-12. it.skip('XXXXX', function(done)  
+11. it.only('test Name', function(done)
+12. it.skip('test Name', function(done)  
 13. browser.getCssProperty('#udemy-promo-thumbnail', 'height');
 14. before hooks: https://mochajs.org/#hooks
 15. browser.setValue("locator",'Joe');
@@ -83,4 +83,5 @@ Commands within test cases:
 20. browser.isVisible('selector');
 21. browser.hasFocus('selector');
 22. browser.isEnabled("selector");
+23. browser.isSelected("selector");
 
