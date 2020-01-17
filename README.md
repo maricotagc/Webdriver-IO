@@ -84,4 +84,5 @@ Commands within test cases:
 21. browser.hasFocus('selector');
 22. browser.isEnabled("selector");
 23. browser.isSelected("selector");
+24. browser.isVisibleWithinViewport("selector");
 
