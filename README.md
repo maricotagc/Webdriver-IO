@@ -91,4 +91,4 @@ Commands within test cases:
 27. browser.waitForExist(element, milliseconds, boolean); //use false in case you want your selector to be visible
 28. browser.waitUntil(condition, milliseconds, 'message in case of error');
 29. browser.waitForValue('selector', milliseconds);
-
+30. browser.addCommand("newCommandName", function ());
