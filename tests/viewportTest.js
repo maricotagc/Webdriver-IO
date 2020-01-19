@@ -22,6 +22,7 @@ describe('Test whether specific elements are visible within viewport', function(
 		var isVisibleWithinViewport = browser.isVisibleWithinViewport("#visibility-hidden");
 		console.log(isVisibleWithinViewport); //false
 
+
 		var isVisibleWithinViewport = browser.isVisibleWithinViewport("#zero-opacity");
 		console.log(isVisibleWithinViewport); //false
 

@@ -85,4 +85,5 @@ Commands within test cases:
 22. browser.isEnabled("selector");
 23. browser.isSelected("selector");
 24. browser.isVisibleWithinViewport("selector");
+25. browser.getText('selector');
 
