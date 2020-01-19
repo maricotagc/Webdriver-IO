@@ -86,4 +86,5 @@ Commands within test cases:
 23. browser.isSelected("selector");
 24. browser.isVisibleWithinViewport("selector");
 25. browser.getText('selector');
+26. waitForText(milliseconds);
 
