@@ -53,6 +53,7 @@ beforeSession: function (config, capabilities, specs) {
                    expect = require('chai').expect;
                    should = require('chai').should();
                },
+22. npm install --save-dev sync-request 
                
 Useful websites:
 -----------------------------------------------
