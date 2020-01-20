@@ -30,6 +30,7 @@ describe('Test Contact Us form WebdriverUni', function() {
 	})
 
 contactusDetails.forEach(function (contactDetail) {
+
   it('Should be able to submit a successful submission via contact us form', function(done) {
   	browser.submitDataViaContactUsForm('joe', 'Blogs', contactDetail.email, contactDetail.body);
 
@@ -51,7 +52,6 @@ contactusDetails.forEach(function (contactDetail) {
   	expect(successfulContactConfirmation, 'Successful submission Message does not exist').to.be.false;
     });
 
-  
   it('Should not be able to submit a successful submission via contact us form as all fields are required', function(done) {
   	browser.setValue("[name='first_name']",'Sarah');
   	browser.setValue("[name='email']", 'sarah_woods@mail.com');
