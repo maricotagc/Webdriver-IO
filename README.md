@@ -1,14 +1,14 @@
 # Udemy_Webdriverio
 
-NodeJs contains:
+NodeJs is platform to develop JS applications. It contains:
 ------------------------------------
-1. npm: node pack manager which manages other packages (webdriver, mocha, chai, etc).
+1. npm (node pack manager): manages other packages (webdriver, mocha, chai, etc).
 2. node: executes JS files. To find out version use command: node -v
 3. selenium webdriver: package I will use (automation tool).
 4. "npm init" is a command used every time a new project is started and it creates JSON.
 5. JSON is the file that handles all dependencies withing the project. To check dependencies needed go to www.npmjs.com and search
     for webdriverio.
-7. WDIO file has all configurationsS for tests.
+7. WDIO file has all configurations for tests.
 8. mocha is a package (framework) which has a standard of test cases (describe, it...)
 
 Useful commands:
@@ -66,9 +66,9 @@ Commands within test cases:
 2. expect(url).to.include('TextContainedInURL', 'Text in case of mismatch');
 3. browser.setViewportSize
 4. browser.getTitle()
-5. browser.pause(miliseconds)
+5. browser.pause(milliseconds)
 6. var.should.equal('expectedValue')
-7. this.timeout(miliseconds)
+7. this.timeout(milliseconds)
 8. browser.debug();
 9. DEBUG=true npm test -- --spec=tests/webdriverUniversityTest.js
 10. .exit to leave debug mode
@@ -92,3 +92,21 @@ Commands within test cases:
 28. browser.waitUntil(condition, milliseconds, 'message in case of error');
 29. browser.waitForValue('selector', milliseconds);
 30. browser.addCommand("newCommandName", function ());
+
+Reports:
+-----------------------------------------------
+1. To generate Allure: 
+ /programs/node-v8.17.0-linux-x64/bin/allure generate d1731fe6-4f00-4131-902d-78fe4dea0484-testsuite.xml
+2. To open report just generated:
+/programs/node-v8.17.0-linux-x64/bin/allure open
+
+Configuration in wdio for deleting unnecessary stuff:
+-----------------------------------------------------
+
+beforeSession: function (config, capabilities, specs) {
+        expect = require('chai').expect;
+        should = require('chai').should();
+        const 'del' = require('del');
+        del(['allure-report', 'errorShots', 'reports']);
+     },
+     
