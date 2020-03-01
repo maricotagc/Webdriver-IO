@@ -133,15 +133,16 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: http://webdriver.io/guide/reporters/dot.html
-    reporters: ['dot', 'junit', 'json', 'allure'],
+    reporters: ['dot', 'allure'],
 
     reporterOptions: {
-        junit: {
+        /*junit: {
             outputDir: './reports/junit-results/'
         },
         json: {
             outputDir: './reports/json-results/'
         },
+        */
         allure: {
             outputDir: './reports/allure-results',
             disableWebdriverStepsReporting: true,
@@ -252,10 +253,14 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that ran
      */
+
+      /*
      after: function (result, capabilities, specs) {
         var name = 'ERROR-chrome-' + Date.now();
         browser.saveScreenshot('./errorShots/' + name + '.png');
      },
+     */
+
     /**
      * Gets executed right after terminating the webdriver session.
      * @param {Object} config wdio configuration object

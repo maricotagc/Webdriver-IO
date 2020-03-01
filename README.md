@@ -13,13 +13,14 @@ NodeJs is platform to develop JS applications. It contains:
 
 Useful commands:
 --------------------------------------
-"npm test" --> to execute tests
-"npm test -- --logLevel=verbose" --> to execute TC and see logs in console
-"npm test -- --spec=tests/TESTTOBEEXECUTED.js" --> to execute specific test within tests directory
+npm test --> to execute tests
+npm test -- --logLevel=verbose --> to execute TC and see logs in console
+npm test -- --spec=tests/TESTTOBEEXECUTED.js --> to execute specific test within tests directory
+npm run selenium-server --> to start selenium server
 
 Creating new project
 --------------------------------------
-1. install node
+1. install nodejs (https://nodejs.org/en/download/)
 2. create project folder
 3. get into the project folder and type: npm init (it creates the package.json)
 4. npm install -save-dev webdriverio@4.13.2
